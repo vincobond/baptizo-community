@@ -18,7 +18,7 @@ messaging.onBackgroundMessage((payload) => {
     const notificationTitle = payload.notification.title;
     const notificationOptions = {
         body: payload.notification.body,
-        icon: payload.notification.image || '/logo192.png'
+        icon: payload.notification.image || 'https://ik.imagekit.io/h3qzmviwv/baptizo/posts/images/Baptizo-logo.png'
     };
 
     self.registration.showNotification(notificationTitle, notificationOptions);
